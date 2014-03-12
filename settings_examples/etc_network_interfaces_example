@@ -1,0 +1,21 @@
+auto lo
+
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+#wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+# my wifi device
+auto wlan0
+iface wlan0 inet dhcp
+
+#settings for wifi with password
+  wpa-ssid "wifi ssid"
+  wpa-psk "wifi password"
+
+#settings for wifi without password,
+#uncomment the lines below, and comment the lines above
+  #wireless-essid wifi ssid
+  #wireless-mode managed
+
