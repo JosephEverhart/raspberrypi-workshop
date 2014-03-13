@@ -3,6 +3,7 @@ Installation
 You must have the RPi.GPIO library
 
     sudo pip install RPi.GPIO
+    sudo pip install GPIO
 
 Usage
 =====
